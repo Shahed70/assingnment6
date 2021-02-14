@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">IMAGE GALLERY</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-uppercase">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+ <!-- Navbar -->
+
+  <div class="container">
+    <h4 class="mt-2 text-center">Search Image for create slider</h4>
+    <div class="form-inline mt-3 d-flex justify-content-center">
+      <div class="input-group col-md-6 mb-2">
+        <input type="text" class="form-control" id="search" placeholder="Write your favourite image name">
+      </div>
+      <button type="button" id="search-btn" class="btn btn-primary mb-2">Search</button>
+    </div>
+    <section class="images">
+      <div class="justify-content-around align-items-center mt-3 gallery-header mb-2">
+        <h3 class="head-title text-center">Select image for create slider</h3>
+        <div class="input-group col-md-3 mb-2 mb-md-0">
+          <input class="form-control" id="duration" placeholder="slider change duration">
+        </div>
+        <button id="create-slider" class="btn btn-primary px-5">Create slider</button>
+      </div>
+      <div class="row gallery">
+        <div id="spinner" class="mx-auto d-none mt-5">
+          <div class="spinner-border text-primary " role="status">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- slider -->
+    <div class="main">
+      <section class="mt-5" id="sliders">
+
+      </section>
+      <div class="dots d-flex mt-2 w-100 justify-content-center align-items-center bg-light">
+        <span class="dot" onclick="changeItem(-1)"></span>
+        <span class="dot" onclick="changeItem(1)"></span>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="bg-light mt-5">
+    <p class="text-center text-dark py-3">
+      All Right Reserved By &copy; Shahed
+    </p>
+  </footer>
+  <!-- footer -->
+  <!-- JavaScript links -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
